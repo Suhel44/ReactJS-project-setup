@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from './rootReducer';
 import logo from './logo.svg';
-import Counter from './Counter';
-import { addCount, minusCount } from './counter';
+// import Counter from './Counter';
+// import { addCount, minusCount } from './counter';
 import './App.css';
 
 export const incrementAsync = () => ({
@@ -14,18 +14,23 @@ function App() {
   const dispatch = useDispatch()
   const { clicks } = useSelector((state: RootState) => state.count)
 
-  const increment = (page: number) => {
-    dispatch(addCount(page));
-  }
+  // const increment = (page: number) => {
+  //   dispatch(addCount(page));
+  // }
 
-  const decrement = (page: number) => {
-    dispatch(minusCount(page));
-  }
+  // const decrement = (page: number) => {
+  //   dispatch(minusCount(page));
+  // }
 
 
   return (
     <div className="App">
-      <header className="App-header">
+
+      {/* Route component will comes here */}
+
+
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter
           value={clicks}
@@ -95,7 +100,7 @@ function App() {
           Redux Saga
           </a>
         </div>
-      </header>
+      </header> */}
     </div>
   );
 }
